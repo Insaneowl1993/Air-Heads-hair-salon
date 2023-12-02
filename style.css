@@ -6,11 +6,15 @@
     .contents-button{
         width:100%;
         border: none;
-        background-color: black;
-        color: white;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
         font-size: 40px;
         cursor: pointer;
         text-decoration: none;
+    }
+
+    .contents-button:hover{
+      color: gray;
     }
     .list{
         list-style-type: none;
@@ -22,7 +26,10 @@
   
     .header {
       grid-area: header;
-      width:100%
+      width:100%;
+      display:fixed;
+      top:0;
+      border-bottom: 2px solid black;
       
     }
     .top-buttons{
@@ -33,7 +40,7 @@
         font-weight: 700;
         font-size: 100px;
         text-align:center;
-        color:white;
+        color:rgb(0, 0, 0);
         font-family: 'Great Vibes', cursive;
         margin-bottom: 0px;
     }
@@ -43,6 +50,8 @@
       position:absolute;
       bottom:0;
       width:100%;
+      display:fixed;
+      border-top: 2px solid black;
     }
   
   
@@ -60,21 +69,22 @@
   
   
   .box {
-    background-color: black;
-    color: #fff;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
     border-radius: 0px;
     padding: 10px;
     font-size: 150%;
   }
 
-  #statement{
+  #statement-grid{
     background-color: rgb(185, 185, 185);
     color: black;
     display:grid;
     width: 400px;
     height: 550px;
-    margin-left: 500px;
+    margin-left: 600px;
     margin-top: 20px;
+    padding: 10px;
   }
 
   
@@ -95,12 +105,43 @@
   
   .header,
   .footer {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     text-align: center;
   }
 
   #email{
-    color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
   }
 
+.airheads-image-1{
+  width: 300px;
+  display:grid;
+  position:absolute;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.airheads-image-2 {
+  width: 250px;
+  display:grid;
+  position:absolute;
+  margin-left: 335px;
+  margin-top: 40px;
+}
+
+.airheads-image-3{
+  width: 250px;
+  display:grid;
+  position:absolute;
+  margin-left: 1100px;
+  margin-top: 280px;
+}
+
+.airheads-image-4{
+  width: 450px;
+  display:grid;
+  position:absolute;
+  margin-left: 1100px;
+  margin-top: 60px;
+}
